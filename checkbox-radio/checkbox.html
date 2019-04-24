@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/fonts.css"/>
+    <link type="text/css" rel="stylesheet" href="css/checkbox.css"/>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:62.5%;
+        }
+
+        .inputField {
+            display: inline-block;
+            
+        }
+        .inputField:hover {
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset class="inputField__group">
+        <legend class="inputField__title">Grupo de checks</legend>
+        <label class="inputField"  for="check-01">
+            <input class="inputField__checkbox" type="checkbox" id="check-01" name="checkExample" value="value 1">
+            <span class="inputField__content">
+                <span class="inputField__label icon" aria-hidden="true"></span>
+                <span class="inputField__text">Ejemplo Check accesible</span>
+            </span>
+        </label>
+        <label class="inputField"  for="check-02">
+            <input class="inputField__checkbox" type="checkbox" id="check-02" name="checkExample" value="value 2">
+            <span class="inputField__content">
+                <span class="inputField__label icon" aria-hidden="true"></span>
+                <span class="inputField__text">Ejemplo Check accesible 02</span>
+            </span>
+        </label>
+</fieldset>
+</body>
+</html>

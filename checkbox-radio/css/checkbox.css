@@ -1,0 +1,61 @@
+.inputField__checkbox {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+.inputField__content {
+    display: flex;
+    position:relative;
+    min-height: 3.2rem;
+    align-items: center;
+}
+
+.inputField__label::before {
+    background: #F4F4F4;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 3.2rem;
+    width: 3.2rem;
+}
+.inputField__label::before,
+.inputField__label::after {
+    display: inline-block;
+    content: '';
+    transition: all 0.2s ease-in-out;
+    will-change: transition;
+    opacity: 1;
+}
+.inputField__text {
+    padding: 0 1.6rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.inputField__checkbox:focus + .inputField__content .inputField__label {
+    outline:1px solid #CCC;
+}
+
+.inputField__checkbox:checked + .inputField__content .inputField__label::before {
+    background-color: #CCC;
+}
+.inputField__checkbox:checked + .inputField__content .inputField__label::after {
+    color: #1973B8;
+    line-height: 1;
+    font-size: 2rem;
+    position:absolute;
+    left: .6rem;
+    top: .6rem;   
+    content: "\ea10";
+}
+
+.inputField__checkbox:focus + .inputField__content {
+    outline: 1px solid #CCC;
+}
+.inputField__title {
+    font-size:1.6rem;
+}
+.inputField__group {
+    border:none;
+    padding:2rem;
+    margin: 2rem;
+}
