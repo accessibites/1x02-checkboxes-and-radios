@@ -1,0 +1,31 @@
+.inputField__radio + .inputField__content .inputField__box {
+    background-color: #fff;
+    border: 1px solid #ccd9de;
+    border-radius: 50%;
+    flex: 0 1 auto;
+    height: 3rem;
+    min-width: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.inputField__radio + .inputField__content .inputField__box:after {
+    content: '';
+    border-radius: 50%;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.inputField__radio:checked + .inputField__content .inputField__box {
+    background-color: #EEE;
+}
+
+.inputField__radio:checked + .inputField__content .inputField__box:after {
+    background-color: #71c614;
+}
+    
