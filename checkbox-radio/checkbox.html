@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Ejemplo de checkboxes y radios accesibles</title>
     <link type="text/css" rel="stylesheet" href="css/fonts.css"/>
     <link type="text/css" rel="stylesheet" href="css/commons.css"/>
     <link type="text/css" rel="stylesheet" href="css/checkbox.css"/>
@@ -15,37 +15,37 @@
         <h1>Checkbox y radio accesibles</h1>
     
         <fieldset class="inputField__group">
-            <legend class="inputField__title">Grupo de checks</legend>
+            <legend class="inputField__title">Aceptación de condiciones</legend>
             <label class="inputField" for="check01">
                 <input class="inputField__checkbox accesible__hide" type="checkbox" id="check01" value="value 1">
                 <span class="inputField__content">
                     <span class="inputField__label icon" aria-hidden="true"></span>
-                    <span class="inputField__text">Opción 1</span>
+                    <span class="inputField__text">Acepto la política de privacidad que no me voy ni a leer</span>
                 </span>
             </label>
             <label class="inputField" for="check02">
                 <input class="inputField__checkbox accesible__hide" type="checkbox" id="check02" value="value 2">
                 <span class="inputField__content">
                     <span class="inputField__label icon" aria-hidden="true"></span>
-                    <span class="inputField__text">Opción 2</span>
+                    <span class="inputField__text">Consiento en que me mandéis spam a todas horas</span>
                 </span>
             </label>
         </fieldset>
 
         <fieldset class="inputField__group">
-            <legend class="inputField__title">Grupo de Radios</legend>
+            <legend class="inputField__title">Frecuencia del spam</legend>
             <label for="radio01" class="inputField">
-                <input class="inputField__radio accesible__hide" type="radio" id="radio01" name="radioGroup01" value="value 01" checked />
+                <input class="inputField__radio accesible__hide" type="radio" id="radio01" name="radioGroup01" value="value 01" checked aria-labelledby="txtOption1" />
                 <span class="inputField__content">
                     <span class="inputField__box"></span>
-                    <span aria-hidden="true" class="inputField__text">Opción 1</span>
+                    <span class="inputField__text">De lunes a domingo</span>
                 </span>
             </label>
                 <label for="radio02" class="inputField">
                 <input  class="inputField__radio accesible__hide" type="radio" id="radio02" name="radioGroup01" value="value 01" />
                 <span class="inputField__content">
                     <span class="inputField__box"></span>
-                    <span aria-hidden="true" class="inputField__text">Opción 2</span>
+                    <span class="inputField__text">De martes a lunes</span>
                 </span>
             </label>
         </fieldset>
