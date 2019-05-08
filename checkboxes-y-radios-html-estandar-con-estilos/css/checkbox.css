@@ -1,8 +1,3 @@
-.inputField__checkbox {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    overflow: hidden;
-}
 .inputField__checkbox  .inputField__content {
     display: flex;
     min-height: 3.2rem;
@@ -23,11 +18,8 @@
 }
 .inputField__checkbox + .inputField__content .inputField__label::before,
 .inputField__checkbox + .inputField__content .inputField__label::after {
-    display: inline-block;
+    display: block;
     content: '';
-    transition: opacity 0.2s ease-in-out;
-    will-change: transition;
-    opacity: 1;
 }
 
 .inputField__checkbox:focus + .inputField__content .inputField__label {

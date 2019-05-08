@@ -7,8 +7,17 @@
   <title>Ejemplo de checkbox</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+<!-- Errores cometidos
+	- 
+-->
 <body class="page">
   <main class="page__main">
+    <ul>
+        <li>Un elemento o componente no debe verse, comportarse o funcionar como si se tratara de otro componente porque genera confusión. !Este checkbox parece un radio!</li>
+        <li>El input tiene un display:none. No podrá escucharse correctamente porque desaparece del DOM</li>
+        <li>El elemento no crece correctamente cuando se hace zoom de fuente, porque su tamaño está en px</li>
+        <li>Todo el js es inncesario, con css podemos saber si un input está chequeado. Se requieren ligeras modificaciones de css y html para hacerlo posible</li>
+    </ul>
     <form action="" class="form">
       <h1 class="form__title">Lorem ipsum</h1>
       <div class="form__content">Dolor sit amet consectetur, adipisicing elit. Earum, praesentium non saepe laudantium magni perspiciatis officiis blanditiis sequi sunt. Blanditiis assumenda consequatur aut laboriosam similique repellat magnam sequi voluptatibus corporis.</div>

@@ -1,25 +1,27 @@
 .inputField__radio + .inputField__content .inputField__box {
+    align-items: center;
     background-color: #fff;
     border: 1px solid #ccd9de;
     border-radius: 50%;
+    display: flex;
     flex: 0 1 auto;
     height: 3rem;
-    min-width: 3rem;
-    width: 3rem;
-    display: flex;
-    align-items: center;
     justify-content: center;
     overflow: hidden;
+    width: 3rem;
+}
+
+.inputField__radio:focus + .inputField__content {
+    outline:1px solid #CCC;
 }
 
 .inputField__radio + .inputField__content .inputField__box:after {
-    content: '';
     border-radius: 50%;
+    content: '';
     display: block;
     height: 2rem;
     width: 2rem;
 }
-
 
 .inputField__radio:checked + .inputField__content .inputField__box {
     background-color: #EEE;

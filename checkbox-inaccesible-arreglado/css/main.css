@@ -1,0 +1,38 @@
+.form__row {
+  margin-top: 1em;
+}
+
+.form__label {
+  display:flex;
+}
+
+.form__label:hover {
+  cursor: pointer;
+}
+
+.form__checkbox {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height:1px;
+}
+
+.checkbox__content {
+  display: flex;
+}
+
+.checkbox__outer {
+  width: 1em;
+  height: 1em;
+  background-color: lightgray;
+  border: 1px solid #CCC;
+  margin-right:.5em;
+}
+
+.form__checkbox:checked + .checkbox__content .checkbox__outer {
+  background-color:red;
+}
+
+.form__checkbox:focus + .checkbox__content {
+  border: 1px solid #CCC;
+}
