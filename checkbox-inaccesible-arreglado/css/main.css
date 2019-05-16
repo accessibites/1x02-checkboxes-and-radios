@@ -19,11 +19,12 @@
 
 .checkbox__content {
   display: flex;
+  align-items: center;
 }
 
 .checkbox__outer {
-  width: 1em;
-  height: 1em;
+  width: 1.3em;
+  height: 1.3em;
   background-color: lightgray;
   border: 1px solid #CCC;
   margin-right:.5em;
